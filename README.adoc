@@ -1,0 +1,10 @@
+This repository tracks weird behaviors and bugs with input hardware. This
+does not include invalid handling in user space, only hardware quirks that
+need to be either fixed in the kernel or in userspace.
+
+**The text format in this repository is Asciidoc, not Markdown**
+
+Hardware is tracked by manufacturer name, e.g. lenovo.adoc contains all
+Lenovo devices. Built-in devices like touchpads are tracked by the
+manufacturer of the device that contains that touchpad. i.e. a Synaptics
+touchpad in a Lenovo machine will be in the Lenovo list.

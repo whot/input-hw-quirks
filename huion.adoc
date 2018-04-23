@@ -1,0 +1,16 @@
+= HUION =
+
+HUION is a manufacturer of graphics tablets. HUION tablets commonly get
+rebranded and sold under different names.
+
+:toc:
+
+WARNING: HUION re-uses USB IDs for different devices, so ID-based device
+detection will not work. Name-based detection generally works, except where
+it doesn't.
+
+== PenTablet ==
+`BTN_TOOL_PEN` is sent once on first proximity in, but it is never reset.
+The pen appears constantly in proximity.
+
+This affects some devices only.

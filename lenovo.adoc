@@ -1,0 +1,64 @@
+= Lenovo =
+
+:toc:
+
+TIP: Lenovo's laptops commonly use a aXYZb convention where X is the screen size, Y
+is the year released and Z is usually 0. a and b are the actual models as
+Lenovo sells them. For example, a T460p is a 14-inch screen released in
+2016.
+
+== 40 series ==
+
+Series with top button pads (INPUT_PROP_BUTTONPAD). Requires userspace
+support. See `topbuttonpad_pnp_ids` in `drivers/input/mouse/synaptics.c`
+
+Original series (late 2013) had broken PS/2 firmware (invalid dimensions).
+Fixed in the second revision early 2014. See `min_max_pnpid_table` in
+`drivers/input/mouse/synaptics.c`.
+
+First series we tried to switch to RMI4, but suspend/resume results in
+two-finger touch being broken.
+* https://bugzilla.redhat.com/show_bug.cgi?id=1560439
+
+== 50 series ==
+Slow movement with the cursor triggers lots of `ABS_PRESSURE` updates but no
+x/y movement. Eventually, after ~2mm or so we get a large jump for x/y,
+followed by normal deltas again for a bit.
+
+RMI4 should work on the *50 series.
+
+== 60 series ==
+RMI4 does not work, BIOS tables 
+
+* https://bugzilla.redhat.com/show_bug.cgi?id=1480602
+
+== x220 ==
+Firmware update can change the touchapd firmware to the x230 behavior
+* https://bugzilla.redhat.com/show_bug.cgi?id=1264453
+
+== x230 ==
+Touchpad firmware filters out events really badly, pointer behavior is
+terrible. Requires tuning of pointer acceleration, see the
+`LIBINPUT_MODEL_LENOVO_X230` in libinput.
+
+== T440p ==
+* part of the <<40 series>>
+* see <<50 series>> for the jumping cursor issue
+ ** https://bugs.freedesktop.org/show_bug.cgi?id=105640
+
+== P50 ==
+* see <<50 series>> for the jumping cursor issue
+ ** https://bugs.freedesktop.org/show_bug.cgi?id=105022
+
+== Carbon X1 6th ==
+PS/2 is broken on this device, only RMI4 works.
+
+Device randomly sets `ABS_MT_TOOL_TYPE` to `MT_TOOL_PALM`, this axis should
+be ignored.
+
+* https://bugzilla.redhat.com/show_bug.cgi?id=1565692
+
+== X1 Yoga ==
+Keyboard is disabled in yoga mode but the screen has a windows key and
+volume rocker that sends events through the same keyboard device node
+* http://bugs.freedesktop.org/103749

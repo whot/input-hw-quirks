@@ -1,0 +1,11 @@
+= Razer =
+
+:toc:
+
+== Blade ==
+Lid switch handling is broken (see also <<microsoft.adoc#Surface 3>>) and
+remains in 'closed' state after resume.
+
+* https://bugzilla.kernel.org/show_bug.cgi?id=191211
+* https://bugs.freedesktop.org/show_bug.cgi?id=102039
+

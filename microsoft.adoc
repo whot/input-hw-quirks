@@ -1,0 +1,9 @@
+= Microsoft =
+
+:toc:
+
+== Surface 3 ==
+Lid switch handling is busted and remains in 'closed' state after resume.
+Needs userspace to update when touchpad/keyboard activity is detected.
+
+* https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/drivers/acpi/button.c?id=878d8db039daac0938238e9a40a5bd6e50ee3c9b

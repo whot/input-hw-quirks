@@ -1,0 +1,12 @@
+= Aiptek =
+
+Aiptek is a manufacturer of graphics tablets. Aiptek tablets commonly get
+rebranded and sold under different names.
+
+:toc:
+
+== Trust TB-4200 Wireless Scroll Tablet ==
+
+Device advertises ABS_TILT_X/Y but doesn't actually send events on those
+axes.
+* https://bugzilla.redhat.com/show_bug.cgi?id=1535755

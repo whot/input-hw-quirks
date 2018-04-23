@@ -1,0 +1,14 @@
+= Input device hardware quirk tracker =
+
+This is a list of broken device behaviors that need(ed) to be fixed either
+in the kernel or in userspace (typically libinput). As a general rule, if
+either libinput or the kernel require a model-specific patch, the device
+should be added here.
+
+* <<aiptek.adoc#aiptek, Aiptek>>
+* <<hp.adoc#hp, HP>>
+* <<huion.adoc#huion, HUION>>
+* <<lenovo.adoc#lenovo, Lenovo>>
+* <<logitech.adoc#logitech, Logitech>>
+* <<microsoft.adoc#microsoft, Microsoft>>
+* <<razer.adoc#razer, Razer>>

@@ -1,0 +1,31 @@
+= HP =
+
+:toc:
+
+== HP6910 ==
+Touchpad claims to support two/three-finger touch but only ever sends single
+touch events.
+
+* https://bugs.freedesktop.org/show_bug.cgi?id=98538
+
+== HP8510 ==
+Touchpad claims to support two/three-finger touch but only ever sends single
+touch events.
+
+* https://bugzilla.redhat.com/show_bug.cgi?id=1351285
+
+== Pavilion dm4 ==
+Two finger data is garbage, jumps around a bit, affecting both
+touch positions.
+
+* https://bugzilla.redhat.com/show_bug.cgi?id=1535755
+
+== Stream 11 ==
+Touchpad does not have `INPUT_PROP_BUTTONPAD` set in PS/2 mode.
+
+== ZBook Studio G3 ==
+
+Touchpad claims to support 4 fingers through slots, but only ever sends two.
+
+* https://bugzilla.redhat.com/show_bug.cgi?id=1535755
+

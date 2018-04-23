@@ -1,0 +1,14 @@
+= Logitech =
+
+:toc:
+
+== K400 ==
+Touchpad remains in PS/2 mouse emulation mode. Button events from tapping
+are sent in bursts and can trigger debouncing detection.
+
+* https://bugs.freedesktop.org/show_bug.cgi?id=105974
+
+== Marble Mouse ==
+
+Device claims to have a middle mouse button but doesn't.
+

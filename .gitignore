@@ -1,0 +1,8 @@
+*.swp
+*~
+*.sig
+*.tar.*
+*.announce
+*.patch
+*.rej
+tags
