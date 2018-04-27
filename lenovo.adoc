@@ -46,6 +46,14 @@ terrible. Requires tuning of pointer acceleration, see the
 * see <<50 series>> for the jumping cursor issue
  ** https://bugs.freedesktop.org/show_bug.cgi?id=105640
 
+== T460s ==
+* part of the <<60 series>>
+
+The trackpoint randomly sends a single motion event when the touchpad is in
+use.
+
+* https://bugzilla.redhat.com/show_bug.cgi?id=1572394
+
 == P50 ==
 * see <<50 series>> for the jumping cursor issue
  ** https://bugs.freedesktop.org/show_bug.cgi?id=105022
