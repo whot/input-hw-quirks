@@ -1,0 +1,7 @@
+= Dell =
+
+:toc:
+
+== Latitude 14 7000 (E7470) ==
+
+See <<alps.adoc#_Series_SS5_DualPoint_trackstick>>

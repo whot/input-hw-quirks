@@ -1,0 +1,11 @@
+= ALPS =
+
+:toc:
+
+== Series SS5 DualPoint trackstick ==
+
+Trackpoint changed reporting to raw mode, resulting coordinates are 
+roughly 8 times as high as before.
+
+* https://bugs.freedesktop.org/show_bug.cgi?id=106323
+
