@@ -66,6 +66,11 @@ be ignored.
 
 * https://bugzilla.redhat.com/show_bug.cgi?id=1565692
 
+Device doesn't send events on slow movements, the libinput 1.10 acceleration
+curve apparently made the device do exactly nothing.
+
+* https://bugs.freedesktop.org/show_bug.cgi?id=106204
+
 == X1 Yoga ==
 Keyboard is disabled in yoga mode but the screen has a windows key and
 volume rocker that sends events through the same keyboard device node
