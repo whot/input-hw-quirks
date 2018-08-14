@@ -1,0 +1,13 @@
+
+= Acer =
+
+:toc:
+
+== WhiskyLake CPU ==
+
+builtin keyboard does not wake up the system after s2idle.
+
+See 'Built in PS2 keyboard in new ASUS/acer laptops can not wake up system
+after s2idle' on linux-input. 
+
+
