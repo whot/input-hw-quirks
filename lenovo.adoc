@@ -75,3 +75,15 @@ curve apparently made the device do exactly nothing.
 Keyboard is disabled in yoga mode but the screen has a windows key and
 volume rocker that sends events through the same keyboard device node
 * http://bugs.freedesktop.org/103749
+
+== Lenovo ThinkPad CompactKeyboard USB with Trackpoint ==
+Sensitivity setting by default is 5 and the measured range is 10. Not a bug
+with the device itself, just very unexpected. Hopefully doesn't matter with
+the libinput 1.12 curves now.
+
+== T480s ==
+* Middle button on the trackpoint does not always send a button event, looks
+like a bad switch. This also affects the X1 carbon 2018
+** https://gitlab.freedesktop.org/libinput/libinput/issues/111
+
+
